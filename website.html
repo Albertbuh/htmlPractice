@@ -13,6 +13,14 @@
             height: 40px;
             width: 120px;
             margin: 10px 10px 10px 10px;
+            cursor: pointer;
+            transition: opacity 0.15s;
+        }
+        .request-button:hover {
+            opacity: 0.7;
+        }
+        .request-button:active {
+            opacity: 0.85;
         }
     
         .cart-button {
@@ -23,6 +31,14 @@
             border: none;
             border-radius: 20px;
             margin: 10px 10px 10px 10px;
+            cursor: pointer;
+            transition: background-color 0.15s, opacity 0.15s;
+        }
+        .cart-button:hover {
+            background-color: rgb(239, 181, 20);
+        }
+        .cart-button:active {
+            opacity: 0.85;
         }
 
         .signup-button {
@@ -34,6 +50,15 @@
             border-radius: 6px;
             font-weight: bold;
             margin: 10px 10px 10px 10px;
+            cursor: pointer;
+            transition: box-shadow 0.15s, background-color 0.15s;
+        }
+        .signup-button:hover {
+            box-shadow: 4px 4px 10px rgba(0,0,0, 0.3);
+        }
+        .signup-button:active {
+            box-shadow: 4px 4px 10px rgba(0,0,0, 0.3);
+            background-color: rgb(27, 117, 53);
         }
 
         .start-button {
@@ -45,7 +70,11 @@
             width: 120px;
             font-weight: bold;
             margin: 10px 10px 10px 10px;
-            cursor: default;
+            cursor: pointer;
+            transition: background-color 0.15s;
+        }
+        .start-button:hover{
+            background-color: rgb(68, 47, 99);
         }
         
         .download-button {
@@ -60,6 +89,11 @@
             font-weight: bold;
             margin: 10px 10px 10px 10px;
             cursor: pointer;
+            transition: background-color 0.15s, color 0.15s;
+        }
+        .download-button:hover {
+            background-color: rgb(108, 117, 125);
+            color: white;
         }
 
         .apply-button {
@@ -70,6 +104,11 @@
             width: 300px;
             height: 40px;
             font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s; 
+        }
+        .apply-button:hover {
+            background-color: rgb(6, 66, 126);
         }
 
         .save-button {
@@ -83,7 +122,14 @@
             height: 40px;
             width: 80px;
             cursor: pointer;
+            transition: background-color 0.15s, border-width 0.15s;
         }
+        .save-button:hover {
+            background-color: rgba(39, 147, 255, 0.267);
+            border-width: 3px;
+        }
+
+    
 
         
 
@@ -91,6 +137,8 @@
 </head>
 <body>
     
+<h1> Simple button style practice</h1>
+
 <button class="request-button"> Request now </button> 
 <button class="cart-button"> Add to Cart </button>
 <button class="signup-button"> Sign up </button> <br>
