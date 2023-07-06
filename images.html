@@ -2,9 +2,123 @@
 <html>
 <head>
    <title>Images</title>
+  <style>
+    body {
+      font-family: Arial;
+    }
 
+    .cat-image1 {
+        width: 200px;
+        vertical-align: top;
+        border-radius: 20px;
+    }
+    .cat-image2 {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      object-position: center;
+    }
+    .cat-image3 {
+      margin-top: 5px;
+      width: 100px;
+      height: 100px;
+      border-radius: 150px;
+      vertical-align: middle;
+    }
+    .cat-message {
+      font-family: Arial;
+      font-size: 24px;
+      color: rgba(96,96,96,0.9);
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 20px;
+      margin-right: 80px;
+    }
+    .tweet-button {
+      background-color: rgb(33, 91, 249);
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 8px 15px; 
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    .tweet-button:hover {
+      background-color: rgb(1, 51, 189);
+    }
+
+    input {
+      margin: 10px;
+    }
+    .search-1 {
+      font-size: 24px;
+      border-radius: 10px;
+      padding: 10px 10px;
+      border-style: solid;
+      border-color: rgb(195, 195, 195);
+      display: block;
+    }
+    .search-2 {
+      font-size: 24px;
+      border: none;
+      border-radius: 25px;
+      width: 700px;
+      padding: 10px 10px;
+      box-shadow: 2px 4px 12px rgba(0,0,0,0.3);
+    }
+    
+    .email-p {
+      font-family: Arial;
+      font-weight: bold;
+      font-size: 12px;
+      color: rgba(96,96,96,0.7); 
+      margin: 0px 0px 5px 0px;     
+    }
+    .email-input {
+      margin: 0px;
+      width: 320px;
+    }
+    .text-p {
+      font-family: Arial;
+      font-weight: bold;
+      font-size: 12px;
+      color: rgba(96,96,96,0.7);
+      margin-top: 10px;
+    }
+    .agree-button {
+      background-color: rgb(33, 91, 249);
+      color: white;
+      border: none;
+      border-radius:50px;
+      padding: 15px 128px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+      margin-bottom: 30px;
+    }
+    .agree-button:hover {
+      background-color: rgb(1, 51, 189);
+    }
+
+  </style>
 </head>
 <body>
-  <img src="https://t4.ftcdn.net/jpg/02/66/72/41/360_F_266724172_Iy8gdKgMa7XmrhYYxLCxyhx6J7070Pr8.jpg">
+  <img class="cat-image1" src="https://t4.ftcdn.net/jpg/02/66/72/41/360_F_266724172_Iy8gdKgMa7XmrhYYxLCxyhx6J7070Pr8.jpg">
+  <img class="cat-image2" src="https://t4.ftcdn.net/jpg/02/66/72/41/360_F_266724172_Iy8gdKgMa7XmrhYYxLCxyhx6J7070Pr8.jpg">
+  <img class="cat-image3" src="https://t4.ftcdn.net/jpg/02/66/72/41/360_F_266724172_Iy8gdKgMa7XmrhYYxLCxyhx6J7070Pr8.jpg">
+
+  <input class="search-1" type="text" placeholder="Search">
+  <input class="search-2" type="text" placeholder="Search">
+
+  <p class="email-p"> Email </p>
+  <input class="email-input" type="text">
+  <p class="text-p"> By clicking Agree & Join, you agree ot the Privacy Policy.</p>
+  <button class="agree-button"> Agree & Join </button>
+  <br>
+
+  
+  <img class="cat-image3" src="https://t4.ftcdn.net/jpg/02/66/72/41/360_F_266724172_Iy8gdKgMa7XmrhYYxLCxyhx6J7070Pr8.jpg">
+  <p class="cat-message"> What's happening&#63;</p>
+  <button class="tweet-button"> Tweet </button>
 </body>
 </html>
