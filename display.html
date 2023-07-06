@@ -4,8 +4,120 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Display Practice</title>
+
+  <style>
+    button {
+      vertical-align: middle;
+    }
+
+    .large-text {
+      width: 200px;
+      display: inline-block;
+      margin: 5px;
+      vertical-align: middle;
+    }
+
+    input[type=text] {
+      font-family: Arial;
+      font-size: 12px;
+      margin: 0px 5px 10px 0px;
+      padding: 10px 10px 10px;
+    }
+    .firstname-input,
+    .secondname-input {
+      display: inline-block;
+      width: 100px;
+      font-family: Arial;
+      font-size: 12px;
+      margin: 0px 5px 10px 0px;
+      padding: 10px 10px 10px;
+      border-radius: 10px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: rgba(96,96,96,0.3)
+    }
+    .email-input {
+      display: block;     
+      border-style: solid;
+      border-width: 1px;
+      border-color: rgba(96,96,96,0.3);
+      border-radius: 10px;
+      width: 235px;
+    }
+    .signup-button {
+      background-color: rgb(0, 68, 255);
+      color: white;
+      padding: 10px 105px;
+      border-radius: 10px;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .uber-header {
+      font-family: Arial;
+      font-size: 32px;
+      font-weight: bold;
+    }
+    .uber-input {
+      background-color: rgba(164, 164, 164, 0.312);
+      display: block;
+      border-radius: 0px;
+      border: none;
+      width: 400px;
+    }
+    .request-button {
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 20px 20px 20px 0px;
+      cursor: pointer;
+      transition: opacity 0.15s;
+    }
+    .request-button:hover {
+        opacity: 0.7;
+    }
+    .request-button:active {
+        opacity: 0.85;
+    }
+    
+    .schedule-button {
+      background-color: rgba(164, 164, 164, 0.312);
+      color: black;
+      border: none;
+      padding: 11px 20px;
+      margin: 20px 20px 20px 0px;
+      cursor: pointer;
+      transition: background-color 0.15s;
+    }
+    .schedule-button:hover {
+        background-color: gray;
+    }
+    .schedule-button:active {
+        background-color: rgba(164, 164, 164, 0.312);
+    }
+
+  </style>
 </head>
 <body>
-  
+  <p class="large-text"> 
+    Thanks for chatting with our
+    customer support. Would you
+    like to take our quick survey?
+  </p>
+  <button> Yes </button>
+  <button> No </button>
+  <hr>
+  <input class="firstname-input" type="text" placeholder="First Name">
+  <input class="secondname-input" type="text" placeholder="Second Name">
+  <input class="email-input" type="text" placeholder="Email">
+  <button class="signup-button"> Sign up </button>
+  <hr>
+  <p class="uber-header"> Request a ride now</p>
+  <input class="uber-input" type="text" placeholder="Enter pickup location">
+  <input class="uber-input" type="text" placeholder="Enter destination">
+  <button class="request-button"> Request now </button>
+  <button class="schedule-button"> Schedule for late </button>
 </body>
 </html>
