@@ -36,8 +36,8 @@
     }
 
     .cat-image {
-      width: 100px;
-      height: 100px;
+      width: 150px;
+      height: 150px;
       object-fit: cover;
       object-position: center;
     }
@@ -48,11 +48,13 @@
       margin: 5px 0px 0px 0px;
     }
     .information {
+      display: inline-block;
       font-family: Arial;
       font-size: 14px;
       font-weight: normal;
       margin: 0px 0px 5px 0px; 
       color: rgba(96,96,96,0.95);
+      vertical-align: middle;
     }
     .addfriend-button {
       background-color: rgb(33, 91, 249);
@@ -105,37 +107,21 @@
     .google-button:active {
       background-color: rgb(192, 192, 192);
     }
+
+    .user-image {
+      width: 20px;
+      height: 20px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 10px;
+      vertical-align: middle;
+    }
+    .mutual-container {
+      margin: 5px 0px;
+    }
   </style>
 </head>
 <body>
-  
-  <div class="chat-container">
-    <img class="cat-image3" src="https://t4.ftcdn.net/jpg/02/66/72/41/360_F_266724172_Iy8gdKgMa7XmrhYYxLCxyhx6J7070Pr8.jpg">
-    <p class="cat-message"> What's happening&#63;</p>
-    <button class="tweet-button"> Tweet </button>
-  </div>
-  <hr>
-  <div class="users-list">
-    <div class="user-container"> 
-      <img class="cat-image" src="https://t4.ftcdn.net/jpg/02/66/72/41/360_F_266724172_Iy8gdKgMa7XmrhYYxLCxyhx6J7070Pr8.jpg">
-      <p class="nickname"> Oliver </p>
-      <p class="information"> 2 mutual friends </p>
-      <button class="addfriend-button"> Add friend </button>
-    </div>
-    <div class="user-container"> 
-      <img class="cat-image" src="https://images.unsplash.com/photo-1558788353-f76d92427f16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z29sZGVuJTIwZG9nfGVufDB8fDB8fHww&w=1000&q=80">
-      <p class="nickname"> Adolf </p>
-      <p class="information"> 10 mutual friends </p>
-      <button class="addfriend-button"> Add friend </button>
-    </div>
-    <div class="user-container"> 
-      <img class="cat-image" src="https://media.istockphoto.com/id/1137633429/photo/golden-hamster-in-front-of-white-background.jpg?s=612x612&w=0&k=20&c=PMLTheCQNARkjE05NgI-MFf4-2RgMJwgfgUEUVDlLDs=">
-      <p class="nickname"> Jack </p>
-      <p class="information"> 5 mutual friends </p>
-      <button class="addfriend-button"> Add friend </button>
-    </div>
-  </div>
-  <hr>
   <div class="google-page">
     <p class="google-header"> 
       <span style="color:rgb(19, 114, 255)">G</span>
@@ -149,6 +135,47 @@
     <button class="google-button"> Google Search </button>
     <button class="google-button"> I'm Feeling Lucky </button>
   </div>
+  <hr>
+
+  <div class="users-list">
+    <div class="user-container"> 
+      <img class="cat-image" src="https://t4.ftcdn.net/jpg/02/66/72/41/360_F_266724172_Iy8gdKgMa7XmrhYYxLCxyhx6J7070Pr8.jpg">
+      <p class="nickname"> Oliver </p>
+      <div class="mutual-container">
+        <img class="user-image" src="https://nationaltoday.com/wp-content/uploads/2021/09/International-Rabbit-Day-1200x834.jpg">
+        <p class="information"> 2 mutual friends </p>
+      </div>      
+      <button class="addfriend-button"> Add friend </button>
+    </div>
+
+    <div class="user-container"> 
+      <img class="cat-image" src="https://images.unsplash.com/photo-1558788353-f76d92427f16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z29sZGVuJTIwZG9nfGVufDB8fDB8fHww&w=1000&q=80">
+      <p class="nickname"> Adolf </p>
+      <div class="mutual-container">
+        <img class="user-image" src="https://nationaltoday.com/wp-content/uploads/2021/09/International-Rabbit-Day-1200x834.jpg">
+        <p class="information"> 10 mutual friends </p>
+      </div>  
+      <button class="addfriend-button"> Add friend </button>
+    </div>
+    
+    <div class="user-container"> 
+      <img class="cat-image" src="https://media.istockphoto.com/id/1137633429/photo/golden-hamster-in-front-of-white-background.jpg?s=612x612&w=0&k=20&c=PMLTheCQNARkjE05NgI-MFf4-2RgMJwgfgUEUVDlLDs=">
+      <p class="nickname"> Jack </p>
+      <div class="mutual-container">
+        <img class="user-image" src="https://nationaltoday.com/wp-content/uploads/2021/09/International-Rabbit-Day-1200x834.jpg">
+        <p class="information"> 5 mutual friends </p>
+      </div>    
+      <button class="addfriend-button"> Add friend </button>
+    </div>
+  </div>
+  <hr>
+  
+  <div class="chat-container">
+    <img class="cat-image3" src="https://t4.ftcdn.net/jpg/02/66/72/41/360_F_266724172_Iy8gdKgMa7XmrhYYxLCxyhx6J7070Pr8.jpg">
+    <p class="cat-message"> What's happening&#63;</p>
+    <button class="tweet-button"> Tweet </button>
+  </div>
+  <hr>
   
 
   
