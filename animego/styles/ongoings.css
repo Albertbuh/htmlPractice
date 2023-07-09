@@ -1,6 +1,7 @@
 .ongoings {
   padding: 0px 80px 0px;
-  background-color: rgb(224, 226, 229);
+  background-color: rgb(233,235,238);
+  border-bottom: 1px solid rgba(119, 117, 117, 0.195);
 }
 
 .ongoings-header {

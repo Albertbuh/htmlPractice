@@ -1,0 +1,54 @@
+.advertisment  {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-left: 40px;
+  background-color: rgb(224, 226, 229);
+  padding-bottom: 30px;
+}
+
+.advertisment img {
+  width: 360px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.ad-item {
+  position: relative;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.ad-subject {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  bottom: 0;
+  left:0;
+  right:0;
+  padding: 20px 10px;
+}
+
+.ads-text {
+  font-weight: bold;
+  font-size: 24px;
+  width: 240px;
+  text-align: center;
+  display:inline-block;
+  bottom: 0;
+  left:0;
+  padding-right: 10px;
+  border-right: 1px solid rgba(128, 128, 128, 0.572);
+}
+
+.ads-arrow {
+  font-size: 32px;
+  font-weight: bold;
+  color: rgb(67,129,225);
+  display: inline-block;
+  bottom: 0;
+  right: 0;
+  padding-left: 10px;
+}
