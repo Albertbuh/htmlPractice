@@ -1,0 +1,139 @@
+.anime-lists {
+  display: grid;
+ 
+  justify-content: center;
+  padding-left: 60px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  background-color: rgb(233,235,238);
+}
+
+@media (min-width: 1200px) {
+.anime-lists {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+}
+
+@media (max-width: 1199px) {
+  .anime-lists {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .recent {
+    opacity: 0;
+  }
+}
+
+
+/* recent column */
+.recent-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(247,247,247);
+  padding: 10px;
+  line-height: 34px;
+}
+.recent-header .left-section {
+  font-weight: bold;
+  font-size: 28px;  
+  padding-right: 20px;
+}
+.recent-header .right-section {
+  color:rgb(255, 92, 87);
+  text-decoration: none;
+  padding-right: 5px;
+}
+.recent-header .right-section:hover {
+  text-decoration: underline;
+}
+
+.titles-flexbox {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: unset;
+}
+.title {
+  background-color: white;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.229);
+  display: flex;
+  align-items: center;
+}
+
+.title img {
+  width: 80px;
+  height: auto;
+  margin: 20px;
+}
+
+.title .title-name {
+  color:rgb(255, 92, 87);
+  font-size: 20px;
+  margin-top: 8px;
+  padding-bottom: 15px;
+  display: inline-block;
+  text-decoration: none;
+}
+.title .title-name:hover {
+  text-decoration: underline;
+}
+
+.title .title-type,
+.title .title-series-amount {
+  color: rgba(128, 128, 128, 0.733);
+  padding-bottom: 15px;
+}
+
+/* Schedule column */
+.schedule {
+  margin: 0px 20px;
+}
+.schedule-header,
+.schedule-note,
+.new-header {
+  background-color: rgb(247,247,247);
+}
+.schedule-header,
+.new-header {
+  font-weight: bold;
+  font-size: 24px;
+  padding: 10px;
+}
+.schedule-note span {
+  font-weight: bold;
+  color: rgba(106, 106, 106, 0.661);
+}
+.schedule-note {
+  padding: 10px;
+  color: rgba(105, 104, 104, 0.61);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.days-flexbox {
+  display: flex;
+  flex-direction: column;
+}
+.days-flexbox .day {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(217,217,217);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.473);
+}
+
+.days-flexbox .dayname {
+  font-weight: bold;
+  padding: 20px;
+  font-size: 18px;
+}
+.days-flexbox .day-button {
+  display: inline-block;
+  color:rgb(255, 92, 87);
+  padding: 20px;
+  text-decoration: none;
+}
+.days-flexbox .day-button abbr:hover {
+  text-decoration: none;
+}
+

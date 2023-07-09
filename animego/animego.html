@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles/ongoings.css">
     <link rel="stylesheet" href="styles/advertisment.css">
     <!-- anime list css -->
-    <link rel="stylesheet" href="styles/recent.css">
+    <link rel="stylesheet" href="styles/lists.css">
   </head>
 
   <body>
@@ -122,28 +122,113 @@
         </div>
     </section>
 
-    <section class="anime-lists"
-    style="background-color: rgb(224, 226, 229);
-      padding-top: 20px;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;">
+    <section class="anime-lists">
+      <div class="new">
+        <div class="new-header"> Обновления аниме </div>
+        <div class="days-flexbox">
+          <div class="day">
+            <p class="dayname"> Сегодня(9 июля 2023) </p>
+            <a href="#" class="day-button"> <abbr title="Развернуть">Развернуть</abbr> </a>
+          </div>
+          <div class="day">
+            <p class="dayname"> Вчера (8 июля 2023) </p>
+            <a href="#" class="day-button"> <abbr title="Развернуть">Развернуть</abbr> </a>
+          </div>
+        </div>
+      </div>
 
-      <div class="new"></div>
-      <div class="schedule"></div>
+      <div class="schedule">
+        <div class="schedule-header"> Расписание аниме </div>
+        <p class="schedule-note"> 
+          <span>Внимание!</span> В графике указаны даты выхода 
+          эпизодов на телеэкранах Японии. На сайте появится 
+          в течение дня либо на следующий день. 
+        </p>
+        <div class="days-flexbox">
+          <div class="day">
+            <p class="dayname"> Понедельник </p>
+            <a href="#" class="day-button"> <abbr title="Развернуть">Развернуть</abbr> </a>
+          </div>
+          <div class="day">
+            <p class="dayname"> Вторник </p>
+            <a href="#" class="day-button"> <abbr title="Развернуть">Развернуть</abbr> </a>
+          </div>
+          <div class="day">
+            <p class="dayname"> Среда </p>
+            <a href="#" class="day-button"> <abbr title="Развернуть">Развернуть</abbr> </a>
+          </div>
+          <div class="day">
+            <p class="dayname"> Четверг </p>
+            <a href="#" class="day-button"> <abbr title="Развернуть">Развернуть</abbr> </a>
+          </div>
+          <div class="day">
+            <p class="dayname"> Пятница </p>
+            <a href="#" class="day-button"> <abbr title="Развернуть">Развернуть</abbr> </a>
+          </div>
+          <div class="day">
+            <p class="dayname"> Суббота </p>
+            <a href="#" class="day-button"> <abbr title="Развернуть">Развернуть</abbr> </a>
+          </div>
+          <div class="day">
+            <p class="dayname"> Воскресенье </p>
+            <a href="#" class="day-button"> <abbr title="Развернуть">Развернуть</abbr> </a>
+          </div>
+        </div>
+      </div>
+
       <div class="recent">
         <div class="recent-header">
           <p class="left-section"> Недавно вышедшие аниме </p>
           <a href="#" class="right-section"> Все </a>
         </div>
-        <div class="anime-item">
-          <img src="https://animego.org/media/cache/thumbs_250x350/upload/anime/images/64385f08186bf276815456.jpg" alt="">
-          <div class="titles">
+        <div class="titles-flexbox">
+          <div class="title">
+            <img src="https://animego.org/media/cache/thumbs_250x350/upload/anime/images/64385f08186bf276815456.jpg" alt="">
             <div class="title-description">
-              <p class="title-name"> Рейтинг короля: Сундук с сокровищами мужества</p>
+              <a href="#" class="title-name"> Рейтинг короля: Сундук с сокровищами мужества</a>
               <p class="title-type"> ТВ Сериал / 2023</p>
               <p class="title-series-amount"> 10 эпизодов </p>
             </div>
-
+          </div>
+          <div class="title">
+            <img src="https://animego.org/media/cache/thumbs_250x350/upload/anime/images/6436e5cc07534226860144.jpg" alt="">
+            <div class="title-description">
+              <a href="#" class="title-name"> Волшебник-воин Орфен 4</a>
+              <p class="title-type"> ТВ Сериал / 2023 </p>
+              <p class="title-series-amount"> 12 эпизодов </p>
+            </div>
+          </div>
+          <div class="title">
+            <img src="https://animego.org/media/cache/thumbs_250x350/upload/anime/images/643a64b683ee2551259270.jpg" alt="">
+            <div class="title-description">
+              <a href="#" class="title-name"> Звёздное дитя </a>
+              <p class="title-type"> ТВ Сериал / 2023</p>
+              <p class="title-series-amount"> 11 эпизодов </p>
+            </div>
+          </div>
+          <div class="title">
+            <img src="https://animego.org/media/cache/thumbs_250x350/upload/anime/images/64362ffd25b31616310724.jpg" alt="">
+            <div class="title-description">
+              <a href="#" class="title-name"> Маргинальная служба</a>
+              <p class="title-type"> ТВ Сериал / 2023</p>
+              <p class="title-series-amount"> 12 эпизодов </p>
+            </div>
+          </div>
+          <div class="title">
+            <img src="https://animego.org/media/cache/thumbs_250x350/upload/anime/images/6434595d95c3e249018106.jpg" alt="">
+            <div class="title-description">
+              <a href="#" class="title-name"> Смертельная игра мёрвтой воды </a>
+              <p class="title-type"> ТВ Сериал / 2023</p>
+              <p class="title-series-amount"> 12 эпизодов </p>
+            </div>
+          </div>
+          <div class="title">
+            <img src="https://animego.org/media/cache/thumbs_250x350/upload/anime/images/64246b56aef46012415216.jpg" alt="">
+            <div class="title-description">
+              <a href="#" class="title-name"> Невеста герцога по контракту </a>
+              <p class="title-type"> ТВ Сериал / 2023</p>
+              <p class="title-series-amount"> 12 эпизодов </p>
+            </div>
           </div>
         </div>
       </div>
