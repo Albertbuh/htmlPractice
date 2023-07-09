@@ -1,0 +1,24 @@
+.subheader {
+  display: flex;
+  background-color: rgb(224, 226, 229);
+  left: 0;
+  right: 0;
+  padding-left: 54px;
+  margin-top: 46px;
+  font-size: 14px;
+}
+
+.subheader a {
+  text-decoration: none;
+  color: rgb(52, 58, 64);
+  margin: 10px 20px;
+}
+.subheader a:hover {
+  color: rgb(255, 92, 87);
+}
+
+@media (max-width: 1000px) {
+  .subheader {
+    opacity: 0;
+  }
+}
