@@ -1,12 +1,13 @@
 .greeting-container {
   padding: 20px 40px 20px 80px;
   background-color: rgb(233,235,238);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.291);
 }
 
 .greet-header {
   font-size: 32px;
-  font-weight: 550;
-  color: black;
+  font-weight: bold;
+  color: rgb(52, 58, 64);
   margin-bottom: 6px;
 }
 
