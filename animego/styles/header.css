@@ -24,6 +24,9 @@
   cursor: pointer;
   transition: color 0.15s;
 }
+.header .right-section {
+  padding-right: 10px;
+}
 .header .left-section p:hover,
 .header .right-section p:hover,
 .header .vk-input:hover,

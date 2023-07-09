@@ -1,0 +1,22 @@
+.greeting-container {
+  padding: 20px 40px 20px 80px;
+  background-color: rgb(233,235,238);
+}
+
+.greet-header {
+  font-size: 32px;
+  font-weight: 550;
+  color: black;
+  margin-bottom: 6px;
+}
+
+.greeting-text {
+  font-size: 15.8px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.greeting-bold {
+  font-weight: bold;
+  color: rgb(79, 78, 78);
+}
