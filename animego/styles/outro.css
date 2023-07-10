@@ -1,0 +1,46 @@
+.outro {
+  padding: 20px 60px 60px;
+  background-color: rgb(233,235,238);
+}
+
+.outro p,
+.outro .point-p,
+.outro span {
+  padding: 5px 0px;
+  color: rgb(50, 50, 50);
+}
+.outro-header {
+  font-weight: bold;
+  font-size: 22px;
+  color: rgb(52,58,64);
+  margin-top: 10px;
+}
+
+.outro .point-p {
+  margin-left: 50px;
+  font-size: 16px;
+  line-height: 28px;
+}
+.outro  span {
+  font-size: 24px;
+  margin-left: -25px;
+  margin-right: 10px;
+}
+.outro a {
+  color: rgb(255, 92, 87);
+  text-decoration: none;
+}
+.outro a:hover {
+  text-decoration: underline;
+}
+.outro .finish-text {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.outro .finish-text span {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0;
+  color: rgb(52, 58, 64);
+}
