@@ -1,10 +1,11 @@
 .new-anime {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  column-gap: 10%;
+  column-gap: 7%;
   padding-left: 60px;
   padding-right: 60px;
   background-color: rgb(233,235,238);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.329);
 }
 
 .new-header {
@@ -23,7 +24,7 @@
 }
 .new-anime .anime-item img {
   width: auto;
-  height: 200px;
+  height: 220px;
   margin: 20px;
 }
 
