@@ -1,0 +1,29 @@
+.footer {
+  padding-left: 60px;
+  padding-right: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:rgb(52,58,64);
+  color: rgb(155, 157, 158);
+}
+
+.footer .left-section {
+  display: flex;
+}
+.footer .left-section a{
+  color: rgb(155, 157, 158);
+  text-decoration: none;
+  padding: 10px;
+  font-size: 15px;
+  transition: color 0.2s;
+}
+.footer .left-section a:hover{
+  color: rgb(247, 248, 249);
+  text-decoration: none;
+  padding: 10px;
+  font-size: 15px;
+}
+.footer .right-section {
+  font-size: 16px;
+}
