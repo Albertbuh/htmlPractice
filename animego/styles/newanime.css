@@ -1,0 +1,121 @@
+.new-anime {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  column-gap: 10%;
+  padding-left: 60px;
+  padding-right: 60px;
+  background-color: rgb(233,235,238);
+}
+
+.new-header {
+  background-color: rgb(247,247,247);
+  font-weight: bold;
+  font-size: 32px;
+  padding: 20px;
+}
+
+.new-anime .anime-item{
+  background-color: white;
+  display: flex;
+  align-items: top;
+  padding: 0px 20px 20px 0px;
+  position: relative;
+}
+.new-anime .anime-item img {
+  width: auto;
+  height: 200px;
+  margin: 20px;
+}
+
+.desc {
+  padding-top: 20px;
+}
+
+.ru-name {
+  color:rgb(255, 92, 87);
+  text-decoration: none;
+  font-size: 22px;
+}
+.ru-name:hover {
+  text-decoration: underline;
+}
+
+.jp-name {
+  color: rgb(128, 127, 127);
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.new-anime .info {
+  font-size: 16px;
+  color:rgb(128, 127, 127);
+  margin-top: 6px;
+  margin-bottom: -10px;
+}
+
+.anime-item .info a{
+  color: black;
+}
+.anime-item .info a:hover {
+  color: rgb(255, 92, 87);
+  text-decoration: none;
+}
+
+.anime-item .desc {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+
+
+.anime-item .rate {
+  background-color: rgb(255, 212, 0);
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  font-size: 18px;
+  padding: 3px 0px 3px 10px;
+  left: 15px;
+  top: 12%;
+}
+.anime-item .rate:after {
+  content: "";
+  border: 0.88em solid rgb(255, 212, 0);
+  border-right-color: transparent;
+  position: absolute;
+  top: 0;
+}
+.anime-item .rate:before {
+  content: "";
+  border: 0.33em solid transparent;
+  border-right-color:rgb(255, 212, 0);
+  position: absolute;
+  bottom: -5px;
+  left: -5px;
+}
+
+
+.new-anime .list .button-container {
+  display: flex;
+  justify-content: center;
+}
+.new-anime .list .all-list-button {
+  background-color: rgb(255, 92, 87);
+  color: white;
+  font-size: 18px;
+  border: 4px solid rgb(233,235,238);
+  border-radius: 8px;
+  margin: 20px 10px;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s,
+              border 0.15s;
+}
+.new-anime .list .all-list-button:hover {
+  background-color: rgb(252, 55, 49);
+}
+.new-anime .list .all-list-button:active {
+  border: 4px solid rgb(251, 157, 154);
+}
