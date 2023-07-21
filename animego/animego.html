@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="styles/advertisment.css">
     <link rel="stylesheet" href="styles/lists.css">
     <link rel="stylesheet" href="styles/newanime.css">
-    <link rel="stylesheet" href="styles/newanime_form.css">
+    <link rel="stylesheet" href="styles/filter_form.css">
+    <link rel="stylesheet" href="styles/filter_form_range.css">
     <link rel="stylesheet" href="styles/outro.css">
     <link rel="stylesheet" href="styles/footer.css">
   </head>
@@ -346,29 +347,52 @@
          </div>
 
       <div class="filter-container">
-        <div class="filter-header">
-          <div class="left">
+        <div class="filter-header">            
+          <div class="left-part">
             <img src="icons/filter.png" alt="">
-            <p> Фильтр </p>
-          </div>   
-          <div class="filter-flexbox">
-            <div class="slider">
-              <input type="range" class="filter-slider">
-            </div>
-            <div class="ganre"></div>
-            <div class="type"></div>
-            <div class="type-sound"></div>
-            <div class="status"></div>
-            <div class="age-restrict"></div>
-            <div class="checkboc">
-              <input class="enable-watch-online" type="checkbox">
-              <label for="enable-watch-online"> Можно смотреть онлайн</label>
-            </div>
-            
-          </div>     
-        </div>
+            <p>  Фильтр </p>
+          </div>
+        </div> 
+        <form class="filter-flexbox">
+          <div class="slider-container">
+            <div class="range-value-input">Год 1909</div>
+            <input type="range" class="slider" id="left-slider" value="1959" min="1959" max="2023">
+            <div class="range-value-input">Год 1909</div>
+            <input type="range" class="slider" id="right-slider" value="2023" min="1959" max="2023">
+            <img src="icons/filterYears.png" alt="">
+          </div>
+          <script src="scripts/range.js"></script>
+          
+          <div class="selection-item">
+            <p> Жанры </p>
+            <button class="select-button"> Выберите жанр </button>
+          </div>
+          <div class="selection-item">
+            <p> Тип </p>
+            <button class="select-button"> Выберите тип </button>
+          </div>
+          <div class="selection-item">
+            <p> Тип озвучки </p>
+            <button class="select-button"> Выберите тип озвучки </button>
+          </div>
+          <div class="selection-item">
+            <p> Статус </p>
+            <button class="select-button"> Выберите статус </button>
+          </div>
+          <div class="selection-item">
+            <p> Возрастное ограничение </p>
+            <button class="select-button"> Выберите рейтинг </button>
+          </div>
+          <div class="checkbox">
+            <input id="enable-watch-online" type="checkbox">
+            <label for="enable-watch-online"> Можно смотреть онлайн</label>
+          </div>
+          <input type="submit" value="Искать">
+          
+          
+        </form>    
       </div>
-       </section>
+    </section>
 
     <section class="outro">
       <p class="outro-header">Наши преимущества</p>

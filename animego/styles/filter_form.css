@@ -1,0 +1,90 @@
+.filter-container {
+  background-color: white;
+  padding: 0px 3px 5px;
+  overflow: hidden;
+  min-width: 300px;
+  max-width: 400px;
+  height: 700px;
+}
+
+.filter-header {
+  background-color:rgb(52,58,64);
+  color: white;
+  transform: skewX(20deg);
+  height: 52px;
+  width: 110%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.filter-header .left-part {
+  background-color: rgb(255, 92, 87);
+  height: auto;
+  vertical-align: middle;
+  transform: skewX(-40deg);
+  margin-left: -14%;
+  display: flex;
+  align-items: center;
+}
+.left-part p,
+.left-part img {
+  transform: skewX(20deg);
+}
+ 
+.left-part p {
+  font-size: 22px;
+}
+.left-part img {
+  width: 20px;
+  height: auto;
+  margin-left: 18%;
+  margin-right: 10px;
+}
+
+.filter-flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.filter-flexbox * {
+  margin: 8px 0px 0px;
+}
+
+.filter-flexbox .selection-item {
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.filter-flexbox .select-button {
+  display: block;
+  background-color: white;
+  color: rgb(50, 50, 50);
+  font-size: 16px;
+  text-align: left;
+  padding: 8px 20px;
+  width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.469);
+  border-radius: 3.5px;
+  cursor: pointer;
+  transition: border 0.15s;
+}
+.filter-flexbox .select-button:hover {
+  border: 1px solid rgb(128, 128, 128);
+}
+
+.filter-flexbox input[type=submit] {
+  padding: 10px;
+  border: none;
+  background-color: rgb(255, 92, 87);
+  transition: background-color 0.3s;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+.filter-flexbox input[type=submit]:hover {
+  background-color: rgb(252, 48, 48);
+}
+
+
