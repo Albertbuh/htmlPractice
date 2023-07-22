@@ -1,0 +1,77 @@
+.selection-item .droplist {
+  width: 100%;
+  height: auto;
+  max-height: 245px;
+  margin-top: 12px;
+  position: absolute;
+  left:0;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgba(128, 128, 128, 0.469);
+  border-radius: 3.5px;
+  z-index: 1;
+  padding: 6px 0px 12px 0px;
+  overflow: auto;
+}
+
+.main-checkbox-container {
+  display: block;
+  position: relative;
+  padding: 6px 0px 6px 32px;
+  font-size: 16px;
+}
+
+.main-checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: -2px;
+  left: 10px;
+  height: 16px;
+  width: 16px;
+  background-color: rgb(128, 128, 128, .3);
+  box-shadow: inset 0px 6px 10px rgba(76, 76, 76, 0.2);
+}
+
+.main-checkbox-container input:checked ~ .checkmark {
+  background-color:rgb(255, 92, 87);
+  box-shadow: 0px 0px 4px red;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.main-checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+.checkmark:after {
+  left: 5.4px;
+  top: 2.6px;
+  width: 3px;
+  height: 6px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.selection-checkbox {
+  padding-left: 44px;
+}
+.selection-checkbox .checkmark {
+  top: -2px;
+  left: 20px;
+}
+.selection-checkbox:hover {
+  background-color: rgba(128, 128, 128, 0.1);
+}
+.selection-checkbox:active {
+  background-color:rgb(255, 92, 87); ;
+  color: white;
+}
+

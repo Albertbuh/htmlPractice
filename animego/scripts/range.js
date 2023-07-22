@@ -31,6 +31,7 @@ let rangeInputs = document.querySelectorAll(".range-value-input");
 rangeInputs[0].style.zIndex = "105"; //neccessary to show left thumb above right thumb
 let leftThumb = document.getElementById("left-slider");
 leftThumb.inputField = rangeInputs[0];
+leftThumb.onpointermove = () => false;
 let rightThumb = document.getElementById("right-slider");
 rightThumb.inputField = rangeInputs[1];
 

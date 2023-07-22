@@ -1,0 +1,56 @@
+.filter-flexbox .selection-item {
+  line-height: 24px;
+  font-size: 16px;
+  position: relative;
+}
+
+.filter-flexbox .select-button {
+  display: block;
+  background-color: white;
+  color: rgb(50, 50, 50);
+  font-size: 16px;
+  text-align: left;
+  padding: 8px 20px;
+  width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.469);
+  border-radius: 3.5px;
+  cursor: pointer;
+  transition: border 0.15s;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.filter-flexbox .select-button-with-params {
+  border: 1px solid rgb(255, 92, 87);
+}
+
+.filter-flexbox .select-button:hover {
+  border: 1px solid rgb(128, 128, 128);
+}
+
+.selection-item .up-arrow {
+	width: 0;
+	height: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-bottom: 4px solid rgb(50, 50, 50);
+  position: absolute;
+  top: 58%;
+  left: 93%;
+}
+
+.selection-item .down-arrow {
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid rgb(50, 50, 50);
+  position: absolute;
+  top: 66%;
+  left: 93%;
+}
+
+
+

@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="styles/newanime.css">
     <link rel="stylesheet" href="styles/filter_form.css">
     <link rel="stylesheet" href="styles/filter_form_range.css">
+    <link rel="stylesheet" href="styles/filter_form_button.css">
+    <link rel="stylesheet" href="styles/filter_form_checkbox.css">
     <link rel="stylesheet" href="styles/outro.css">
     <link rel="stylesheet" href="styles/footer.css">
   </head>
@@ -347,12 +349,14 @@
          </div>
 
       <div class="filter-container">
-        <div class="filter-header">            
-          <div class="left-part">
-            <img src="icons/filter.png" alt="">
-            <p>  Фильтр </p>
-          </div>
-        </div> 
+        <div class="filter-header-rect">
+          <div class="filter-header">            
+            <div class="left-part">
+              <img src="icons/filter.png" alt="">
+              <p>  Фильтр </p>
+            </div>
+          </div> 
+        </div>
         <form class="filter-flexbox">
           <div class="slider-container">
             <div class="range-value-input">Год 1909</div>
@@ -365,30 +369,54 @@
           
           <div class="selection-item">
             <p> Жанры </p>
-            <button class="select-button"> Выберите жанр </button>
+            <button class="select-button"
+            data-select-options="Безумие, Боевые искусства, Вампиры, Военные, Гарем, Демоны, Детектив, Детское, Драма, Игры, Исторический, Комедия, Космос, Магия, Машины, Меха, Музыка, Пародия, Повседневность, Полиция, Приключения, Прихологическое, Романтика"
+            data-default-text="Выберите жанр"
+            > Выберите жанр</button>
+            <i class="up-arrow"></i>
+            <i class="down-arrow"></i>
           </div>
           <div class="selection-item">
             <p> Тип </p>
-            <button class="select-button"> Выберите тип </button>
+            <button class="select-button"
+             data-select-options = "ТВ сериал, Фильм, OVA, Спешл"
+             data-default-text="Выберите тип"
+             > Выберите тип</button>
+            <i class="up-arrow"></i>
+            <i class="down-arrow"></i>
           </div>
           <div class="selection-item">
             <p> Тип озвучки </p>
-            <button class="select-button"> Выберите тип озвучки </button>
+            <button class="select-button"
+              data-select-options = "Anilibria, 2x2, Студийная Банда, AniDUB, KANSAI, SHIZA Project, AniMedia, AniMaunt, MC Entertainment, Onibaku Group"
+              data-default-text="Выберите тип озвучки"
+            > Выберите тип озвучки </button>
+            <i class="up-arrow"></i>
+            <i class="down-arrow"></i>
           </div>
           <div class="selection-item">
             <p> Статус </p>
-            <button class="select-button"> Выберите статус </button>
+            <button class="select-button"
+              data-select-options = "Огоинг, Вышел, Анонс"
+              data-default-text="Выберите статус"
+              > Выберите статус </button>
+            <i class="up-arrow"></i>
+            <i class="down-arrow"></i>
           </div>
           <div class="selection-item">
             <p> Возрастное ограничение </p>
-            <button class="select-button"> Выберите рейтинг </button>
+            <button class="select-button"
+              data-select-options = "G, PG, PG-13, R, NC-17"
+              data-default-text="Выберите рейтинг"
+              > Выберите рейтинг </button>
+            <i class="up-arrow"></i>
+            <i class="down-arrow"></i>
           </div>
           <div class="checkbox">
-            <input id="enable-watch-online" type="checkbox">
-            <label for="enable-watch-online"> Можно смотреть онлайн</label>
+            <label class="main-checkbox-container"> Можно смотреть онлайн <input type="checkbox"><span class="checkmark"></span></label>
           </div>
           <input type="submit" value="Искать">
-          
+          <script src="scripts/formButton.js"></script>
           
         </form>    
       </div>
