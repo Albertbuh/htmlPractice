@@ -2,6 +2,7 @@
   padding: 0px 80px 0px;
   background-color: rgb(233,235,238);
   border-bottom: 1px solid rgba(119, 117, 117, 0.195);
+  overflow: hidden;
 }
 
 .ongoings-header {
@@ -18,9 +19,9 @@
 }
 
 
-.ongoings .anime-grid {
-  display: grid;
-  justify-content: center;
+.ongoings .anime-flex {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   cursor: pointer;
 }
@@ -29,12 +30,14 @@
   display: grid;
   align-items: center;
   justify-content: left;
+  margin-right: 30px;
 }
-.anime-grid img {
+
+.anime-flex img {
   object-fit: cover; 
   
 }
-.anime-grid a {
+.anime-flex a {
   display: block;
   text-decoration: none;
   color:rgb(255, 92, 87);
@@ -46,79 +49,20 @@
   text-overflow: ellipsis;
 }
 
-.anime-grid a:hover {
+.anime-flex a:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 1200px)
-{
-  .anime-grid
-  {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .anime-grid img {
-    width: 150px;
-    height:200px;
-  }
-
-  .anime-grid a {
-    max-width: 150px;
-  }
+.anime-flex img {
+  width: 200px;
+  height: 300px;
 }
 
-@media (min-width: 1200px) and (max-width: 1750px)
-{
-  .anime-grid
-  {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  }
-
-  .anime-grid img {
-    width: 150px;
-    height:200px;
-  }
-
-  .anime-grid a {
-    max-width: 150px;
-  }
+.anime-flex a {
+  max-width: 200px;
+  font-size: 26px;
 }
-
-@media (min-width: 1751px) and (max-width: 1999px)
-{
-  .anime-grid
-  {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  }
-
-  .anime-grid img {
-    width: 200px;
-    height: 300px;
-  }
-
-  .anime-grid a {
-    max-width: 200px;
-    font-size: 26px;
-  }
-}
-
-@media (min-width: 2000px)
-{
-  .anime-grid
-  {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  }
-
-  .anime-grid img {
-    width: 275px;
-    height: 400px;
-  }
-
-  .anime-grid a {
-    max-width: 275px;
-    font-size: 32px;
-  }
-}
+  
 
 .ongoing-object {
   position: relative;
@@ -132,16 +76,16 @@
   margin: 0 auto;
   position: absolute;
   font-size: 17px;
-  padding: 3px 4px 2px 10px;
+  padding: 2px 4px 2px 10px;
   left: -5px;
   top: 2%;
 }
 .ongoings .rate:after {
   content: "";
-  border: 0.88em solid rgb(255, 212, 0);
+  border: 0.82em solid rgb(255, 212, 0);
   border-right-color: transparent;
   position: absolute;
-  top: 0;
+  top: 1%;
 }
 .ongoings .rate:before {
   content: "";
